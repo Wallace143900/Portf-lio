@@ -1,0 +1,39 @@
+nav{
+    width: 100%;
+    background-color: var(--LightCyans);
+    
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 85%;
+        
+        
+        .img{
+            width: 150px;
+            height: 100px;
+            background-color: transparent;
+        }
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap: 10px;
+
+            li {
+                font-family: var(--para-font);
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+
+            li:hover{
+                margin-bottom: 5px;
+                border-bottom: 2px solid black;
+                transition: 0.2s;
+            }
+        }
+    }
+}

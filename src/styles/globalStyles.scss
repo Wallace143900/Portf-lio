@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Poppins&display=swap");
+
+:root {
+    --LightCyan: #e2e2e2;
+    --LightCyans: #aeafac;
+    --StrongText: #122360;
+
+    --body-background: #0a192f;
+    --main: #ccf381;
+    --light-main: rgba(204, 243, 129, 0.8);
+    --white: #ffffff;
+    --light: rgba(255, 255, 255, 0.8);
+    --heading-font: "Kanit", sans-serif;
+    --para-font: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--LightCyan);
+}
