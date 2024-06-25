@@ -1,0 +1,68 @@
+footer{
+    width: 100%;
+    height: 400px;
+
+    h2{
+        text-align: center;
+        color: var(--White-write);
+    }
+
+    .containerContato{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 40px;
+
+        .contato{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .divIconContato{
+                width: 65px;
+                height: 65px;
+                background: var(--Card-Tecnologies);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .iconContato{
+                    width: 40px;
+                    height: 40px;
+                    color: var(--LightCyan);
+                }
+            }
+
+            a{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            h4{
+                color: var(--White-write);
+            }     
+
+            p{
+                color: var(--Cyan-write);
+            }
+
+        }
+    }
+
+    .disoriaBackFront{
+        width: 80%;
+        margin: 0 auto;
+        height: 2px;
+        background: var(--StrongCyan);
+        margin-top: 10px;
+    }
+}

@@ -4,6 +4,7 @@ import { Home } from "./components/Iam.jsx/Home";
 import { AboutMe } from "./components/aboutMe/AboutMe";
 import { Portfolio } from "./components/Portfolio/Portfolio";
 import "./styles/index.scss";
+import { Footer } from "./Footer/Footer";
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     <>
       <Header />
       <Home />
-      <Skill />
       <AboutMe />
+      <Skill />
       <Portfolio />
+      <Footer />
     </>
   )
 }

@@ -7,6 +7,7 @@ section{
         align-items: center;
         width: 80%;
         margin: 0 auto;
+        margin-top: 40px;
     
         .DivMe{
             display: flex;
@@ -15,25 +16,15 @@ section{
             gap: 20px;
 
             #paragraphy{
-                color: var(--StrongText);
-                font-family: var(--heading-font);
-                font-size: 19px;
-                font-weight: 400;
+                color: var(--White-write);
             }
 
-            h1{
-                color: #121816;
-                font-family: var(--heading-font);
-                font-size: 40px;
-                font-weight: 600;
-                border-bottom: 4px solid #121816;
+            #title1{
+                color: var(--LightCyan);
             }
 
-            h2{
-                color: #121816;
-                font-family: var(--heading-font);
-                font-size: 32px;
-                font-weight: 500;
+            h4{
+                color: var(--Cyan-write);
             }
             
             .divButtons{
@@ -42,20 +33,14 @@ section{
                 align-items: flex-start;
                 gap: 20px;
 
-                .button {
-                    width: 165px;
-                    height: 40px;
-                    border: none;
-                    border-radius: 2px;
-                    background-color: var(--LightCyans);
+                #buttonCV {
+                    color: var(--White-write);
+                    background-color: var(--StrongCyan);
                 }
 
-                .Contato{
-                    width: 165px;
-                    height: 40px;
-                    background-color: var(--LightCyan);
-                    border: 2px solid #121816;
-                    border-radius: 2px;
+                #buttonContato{
+                    color: var(--White-write);
+                    background: var(--DarkCyans);
                 }
             }
         }
@@ -63,7 +48,7 @@ section{
         img {
             width: 280px;
             height: 320px;
-            border-radius: 5px;
+            border-radius: 40%;
             margin-top: 2rem;
         }
     }

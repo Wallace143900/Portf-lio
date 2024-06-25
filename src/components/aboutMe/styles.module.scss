@@ -1,0 +1,76 @@
+section{
+    width: 100%;
+    
+    .divContainerAbouMe{
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        
+        .aboutMe{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            
+            h2{
+                font-family: var(--heading-font);
+                color: var(--White-write);
+                font-size: 32px;
+                margin-bottom: 40px;
+                margin-top: 60px;
+            }
+            
+            #paragraphy{
+                color: var(--Cyan-write);
+                width: 65%;
+                text-align: center;
+            }
+            
+            
+        }
+
+        .linha{
+            width: 33%;
+            margin: 0 auto;
+            height: 2px;
+            background: var(--LightCyan);
+            margin-top: 10px;
+        }
+        
+        .divLocals{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+            
+            
+            .locals{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .iconLocal{
+                    width: 30px;
+                    height: 30px;
+                    color: var(--White-write);
+                }
+                
+                h2{
+                    font-family: var(--heading-font);
+                    color: var(--Cyan-write);
+                }
+                
+            }
+            
+            #paragraphy{
+                font-family: var(--heading-font);
+                color: var(--Cyan-write);
+            }
+        }
+    }
+}
