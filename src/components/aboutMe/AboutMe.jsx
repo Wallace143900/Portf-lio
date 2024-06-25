@@ -1,4 +1,3 @@
-import local from "../../assets/icons8-local.png";
 import styles from "./styles.module.scss";
 import { FaUniversity } from "react-icons/fa";
 
