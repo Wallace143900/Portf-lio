@@ -1,58 +1,41 @@
 article {
-  position: relative;
-  z-index: 2;
-  bottom: 0;
-  left: 0;
-}
-  .article.animation {
-      transform: translatex(0%);
-  }
-
-  .article.animation .Container_FrontEnd {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
+    
     .Container_FrontEnd {
         width: 85%;
         margin: 0 auto;
         margin-bottom: 40px;
-        opacity: 0;
-        transform: translateX(-50%);
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-
-
-    
+        
+        
         h3 {
             color: var(--Cyan-write);
             margin-bottom: 40px;
         }
-    
+        
         .divImgProject {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 40px;
-    
+            
             .skillsImgProject {
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
                 margin-bottom: 40px;
-    
+                
                 img {
                     width: 370px;
                     height: 250px;
                     transition: transform 0.3s ease, filter 0.3s ease;
                     filter: brightness(30%);
                 }
-    
+                
                 &:hover img {
                     transform: scale(1.1);
                     filter: brightness(100%);
                 }
-    
+                
                 .descriptionProjects {
                     position: absolute;
                     top: 0;
@@ -68,18 +51,18 @@ article {
                     opacity: 1;
                     transition: opacity 0.3s ease;
                     pointer-events: none;
-    
+                    
                     h4,
                     .iconsProjects {
                         transition: opacity 0.3s ease, transform 0.3s ease;
                     }
-    
+                    
                     h4 {
                         color: var(--White-write);
                         font-weight: 600;
                         margin-top: 10px;
                     }
-    
+                    
                     .iconsProjects {
                         display: flex;
                         justify-content: center;
@@ -87,7 +70,7 @@ article {
                         gap: 15px;
                         margin-top: 15px;
                         color: var(--LightCyan);
-    
+                        
                         .i {
                             width: 30px;
                             height: 30px;
@@ -95,24 +78,24 @@ article {
                         }
                     }
                 }
-    
+                
                 &:hover .descriptionProjects {
                     opacity: 1;
                     pointer-events: auto;
-    
+                    
                     h4,
                     .iconsProjects {
                         opacity: 0;
                         transform: scale(0.9);
                     }
-    
+                    
                     .hidden_button {
                         opacity: 1;
                         transform: translateY(0);
                         margin-bottom: 80px;
                     }
                 }
-    
+                
                 .hidden_button {
                     position: absolute;
                     bottom: 20px;
@@ -128,8 +111,28 @@ article {
                 }
             }
         }
-    }
 
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+            button {
+                padding: 10px;
+                background-color: var(--LightCyan);
+                color: var(--White-write);
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-size: 1.5rem;
+                
+                &:hover {
+                    background-color: var(--Cyan-write);
+                }
+            }
+        }
+    }
+    
     .disoriaBackFront {
         width: 80%;
         margin: 0 auto;
@@ -137,42 +140,42 @@ article {
         background: var(--StrongCyan);
         margin-top: 10px;
     }
-
+    
     .Container_BackEnd {
         width: 85%;
         margin: 0 auto;
         margin-bottom: 40px;
-    
+        
         h3 {
             color: var(--Cyan-write);
             margin-bottom: 40px;
         }
-    
+        
         .divImgProject {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 40px;
-    
+            
             .skillsImgProject {
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
                 margin-bottom: 40px;
-    
+                
                 img {
                     width: 370px;
                     height: 250px;
                     transition: transform 0.3s ease, filter 0.3s ease;
                     filter: brightness(30%);
                 }
-    
+                
                 &:hover img {
                     transform: scale(1.1);
                     filter: brightness(100%);
                 }
-    
+                
                 .descriptionProjects {
                     position: absolute;
                     top: 0;
@@ -188,18 +191,18 @@ article {
                     opacity: 1;
                     transition: opacity 0.3s ease;
                     pointer-events: none;
-    
+                    
                     h4,
                     .iconsProjects {
                         transition: opacity 0.3s ease, transform 0.3s ease;
                     }
-    
+                    
                     h4 {
                         color: var(--White-write);
                         font-weight: 600;
                         margin-top: 10px;
                     }
-    
+                    
                     .iconsProjects {
                         display: flex;
                         justify-content: center;
@@ -207,7 +210,7 @@ article {
                         gap: 15px;
                         margin-top: 15px;
                         color: var(--LightCyan);
-    
+                        
                         .i {
                             width: 30px;
                             height: 30px;
@@ -215,11 +218,11 @@ article {
                         }
                     }
                 }
-    
+                
                 &:hover .descriptionProjects {
                     opacity: 1;
                     pointer-events: auto;
-    
+                    
                     h4,
                     .iconsProjects {
                         opacity: 0;
@@ -232,7 +235,7 @@ article {
                         margin-bottom: 80px;
                     }
                 }
-    
+                
                 .hidden_button {
                     position: absolute;
                     bottom: 20px;
@@ -248,4 +251,26 @@ article {
                 }
             }
         }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+            button {
+                padding: 10px;
+                background-color: var(--LightCyan);
+                color: var(--White-write);
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-size: 1.5rem;
+                
+                &:hover {
+                    background-color: var(--Cyan-write);
+                }
+            }
+        }
     }
+    
+}

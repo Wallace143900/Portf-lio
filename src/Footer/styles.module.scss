@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -8,10 +8,6 @@
     text-align: center;
   }
 
-  h2{
-    color: var(--White-write);
-    margin-bottom: 60px;
-  }
   
   .footer.show {
     transform: translatex(0%);
@@ -23,6 +19,12 @@
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     width: 60%;
     margin: 0 auto;
+    margin-top: 100px;
+
+    h2{
+      color: var(--White-write);
+      margin-bottom: 60px;
+    }
   }
   
   .footer.show .innerFooter {

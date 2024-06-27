@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
 export const ModalProjects = ({ projectDetails, onClose }) => {
+  
+
   if (!projectDetails) return null;
 
   const isBackend = projectDetails.technologies.includes("Node.js");
@@ -14,7 +16,7 @@ export const ModalProjects = ({ projectDetails, onClose }) => {
           <div className={styles.left}>
             <img src={projectDetails.img} alt={projectDetails.title} />
             <div className={styles.divButtons}>
-            {!isBackend && (
+              {!isBackend && (
                 <a href="" target="_blank" className="buttonCV">Acessar Projeto</a>
               )}
               <a href="" target="_blank" className="buttonCV">Acessar Repositório</a>

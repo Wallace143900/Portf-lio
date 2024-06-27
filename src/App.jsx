@@ -6,6 +6,7 @@ import { Skill } from "./components/Skill/Skill";
 import { Portfolio } from "./components/Portfolio/Portfolio";
 import { Footer } from "./Footer/Footer";
 import "./styles/index.scss";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   const aboutRef = useRef(null); // Referência para a seção AboutMe
@@ -30,18 +31,23 @@ function App() {
     }
   };
 
+  
+
   return (
     <>
-      <Header
-        scrollToSkills={scrollToSkills}
-        scrollToPortfolio={scrollToPortfolio}
-        scrollToFooter={scrollToFooter}
-      />
-      <Home />
-      <AboutMe id="skills" ref={aboutRef} /> {/* Passando a referência para AboutMe */}
-      <Skill />
-      <Portfolio id="portfolio" ref={portfolioRef} />
-      <Footer id="footer" ref={footerRef} />
+      <DarkModeProvider>
+        <Header
+          scrollToSkills={scrollToSkills}
+          scrollToPortfolio={scrollToPortfolio}
+          scrollToFooter={scrollToFooter}
+        />
+        <Home />
+        <AboutMe id="about" ref={aboutRef} /> {/* Passando a referência para AboutMe */}
+        <Skill />
+        <Portfolio id="portfolio" ref={portfolioRef} />
+        <Footer id="footer" ref={footerRef} />
+
+      </DarkModeProvider>
     </>
   );
 }

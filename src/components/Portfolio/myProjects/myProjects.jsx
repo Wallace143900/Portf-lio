@@ -8,25 +8,18 @@ import ControlFinance from "../../../assets/fotos para projetos/ControlFinance.j
 import Hamburgueria from "../../../assets/fotos para projetos/Hamburgueria.jpg";
 import KenzieHub from "../../../assets/fotos para projetos/KenzieHub.jpg";
 import Entrega1 from "../../../assets/fotos para projetos/entrega_1_kenzie.jpg";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaSass } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
-import { SiPrisma } from "react-icons/si";
+import { SiTypescript, SiExpress, SiPostgresql, SiPrisma } from "react-icons/si";
 
 export const MyProjects = forwardRef((props, ref) => {
-
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [animationClass, setAnimationClass] = useState(false);
   const projectsRef = useRef(null);
-    
-    const projectFront = [
+  const [currentFrontIndex, setCurrentFrontIndex] = useState(0);
+  const [currentBackIndex, setCurrentBackIndex] = useState(0);
+
+  const projectFront = [
     {
       title: "Lista de Tarefas",
       img: MyTasks,
@@ -87,25 +80,22 @@ export const MyProjects = forwardRef((props, ref) => {
             technologies: ["TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma"],
         },
   ];
-  
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setAnimationClass(true);
-        } else {
-          setAnimationClass(false);
-        }
-      });
-    }, {
-      threshold: 0.5
-    });
+  const handleNext = (type) => {
+    if (type === "front") {
+      setCurrentFrontIndex((prevIndex) => (prevIndex + 1) % projectFront.length);
+    } else {
+      setCurrentBackIndex((prevIndex) => (prevIndex + 1) % projectBack.length);
+    }
+  };
 
-    observer.observe(projectsRef.current);
-
-    return () => observer.disconnect();
-  }, []);
+  const handlePrev = (type) => {
+    if (type === "front") {
+      setCurrentFrontIndex((prevIndex) => (prevIndex - 1 + projectFront.length) % projectFront.length);
+    } else {
+      setCurrentBackIndex((prevIndex) => (prevIndex - 1 + projectBack.length) % projectBack.length);
+    }
+  };
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -118,78 +108,58 @@ export const MyProjects = forwardRef((props, ref) => {
   };
 
   return (
-    <article className={`${styles.article} ${animationClass ? styles.animation : ''}`} ref={projectsRef}>
-      <div className={styles.Container_FrontEnd} ref={ref}>
-        <h3 className="title3">Front-End</h3>
-        <div className={styles.divImgProject}>
-          {projectFront.map((project, index) => (
-            <div className={`${styles.skillsImgProject} ${animationClass}`} key={index}>
-              <img src={project.img} alt={project.title} />
-              <div className={styles.descriptionProjects}>
-                <h4 className="title4">{project.title}</h4>
-                <div className={styles.iconsProjects}>
-                  {project.technologies.includes("HTML5") && (
-                    <FaHtml5 className={styles.i} />
-                  )}
-                  {project.technologies.includes("CSS3") && (
-                    <FaCss3Alt className={styles.i} />
-                  )}
-                  {project.technologies.includes("JavaScript") && (
-                    <IoLogoJavascript className={styles.i} />
-                  )}
-                  {project.technologies.includes("React") && (
-                    <FaReact className={styles.i} />
-                  )}
-                  {project.technologies.includes("Sass") && (
-                    <FaSass className={styles.i} />
-                  )}
+    <article className={styles.article}>
+      <div className={styles.ContainerArticle} ref={ref}>
+        <div className={styles.Container_FrontEnd}>
+          <h3 className="title3">Front-End</h3>
+          <div className={styles.divImgProject}>
+            {projectFront.slice(currentFrontIndex, currentFrontIndex + 3).map((project, index) => (
+              <div className={styles.skillsImgProject} key={index}>
+                <img src={project.img} alt={project.title} />
+                <div className={styles.descriptionProjects}>
+                  <h4 className="title4">{project.title}</h4>
+                  <div className={styles.iconsProjects}>
+                    {project.technologies.includes("HTML5") && <FaHtml5 className={styles.i} />}
+                    {project.technologies.includes("CSS3") && <FaCss3Alt className={styles.i} />}
+                    {project.technologies.includes("JavaScript") && <IoLogoJavascript className={styles.i} />}
+                    {project.technologies.includes("React") && <FaReact className={styles.i} />}
+                    {project.technologies.includes("Sass") && <FaSass className={styles.i} />}
+                  </div>
+                  <button className={styles.hidden_button} onClick={() => openModal(project)}>Ver mais</button>
                 </div>
-                <button
-                  className={styles.hidden_button}
-                  onClick={() => openModal(project)}
-                >
-                  Ver mais
-                </button>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className={styles.navigation}>
+            <button onClick={() => handlePrev('front')}>&#8249;</button>
+            <button onClick={() => handleNext('front')}>&#8250;</button>
+          </div>
         </div>
-      </div>
-      <div className={styles.disoriaBackFront}></div>
-      <div className={styles.Container_BackEnd}>
-        <h3 className="title3">Back-End</h3>
-        <div className={styles.divImgProject}>
-          {projectBack.map((project, index) => (
-            <div className={styles.skillsImgProject} key={index}>
-              <img src={project.img} alt={project.title} />
-              <div className={styles.descriptionProjects}>
-                <h4 className="title4">{project.title}</h4>
-                <div className={styles.iconsProjects}>
-                  {project.technologies.includes("TypeScript") && (
-                    <SiTypescript className={styles.i} />
-                  )}
-                  {project.technologies.includes("Node.js") && (
-                    <FaNodeJs className={styles.i} />
-                  )}
-                  {project.technologies.includes("Express") && (
-                    <SiExpress className={styles.i} />
-                  )}
-                  {project.technologies.includes("PostgreSQL") && (
-                    <SiPostgresql className={styles.i} />
-                  )}
-                  {project.technologies.includes("Prisma") && (
-                    <SiPrisma className={styles.i} />
-                  )}
+        <div className={styles.disoriaBackFront}></div>
+        <div className={styles.Container_BackEnd}>
+          <h3 className="title3">Back-End</h3>
+          <div className={styles.divImgProject}>
+            {projectBack.slice(currentBackIndex, currentBackIndex + 3).map((project, index) => (
+              <div className={styles.skillsImgProject} key={index}>
+                <img src={project.img} alt={project.title} />
+                <div className={styles.descriptionProjects}>
+                  <h4 className="title4">{project.title}</h4>
+                  <div className={styles.iconsProjects}>
+                    {project.technologies.includes("TypeScript") && <SiTypescript className={styles.i} />}
+                    {project.technologies.includes("Node.js") && <FaNodeJs className={styles.i} />}
+                    {project.technologies.includes("Express") && <SiExpress className={styles.i} />}
+                    {project.technologies.includes("PostgreSQL") && <SiPostgresql className={styles.i} />}
+                    {project.technologies.includes("Prisma") && <SiPrisma className={styles.i} />}
+                  </div>
+                  <button className={styles.hidden_button} onClick={() => openModal(project)}>Ver mais</button>
                 </div>
-                <button
-                  className={styles.hidden_button}
-                  onClick={() => openModal(project)}
-                >
-                  Ver mais
-                </button>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className={styles.navigation}>
+            <button onClick={() => handlePrev('back')}>&#8249;</button>
+            <button onClick={() => handleNext('back')}>&#8250;</button>
+          </div>
         </div>
       </div>
       {modalOpen && <ModalProjects projectDetails={selectedProject} onClose={closeModal} />}

@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
+    // Cores para o tema escuro
     --LightCyan: #15971b;
     --DarkCyans: #13131F;
     --StrongCyan: #0a5a0e;
-
-    --Card-Tecnologies: #212121;
-
+  
+    // Cores para o tema claro
+    --LightCyan-light: #78ff7c;
+    --DarkCyans-light: #ffffff;
+    --StrongCyan-light: #3fa242;
+    
+    // Cores gerais
     --White-write: #F9F9F9;
-
     --Cyan-write: #828282;
+  
+    // Variável para alternar entre temas
+    --theme-background: if($dark-theme, var(--DarkCyans), var(--DarkCyans-light));
+    --theme-text: if($dark-theme, var(--White-write), var(--DarkCyans-light));
+  }
 
-    --body-background: #0a192f;
-    --main: #ccf381;
-    --light-main: rgba(204, 243, 129, 0.8);
-    --white: #ffffff;
-    --light: rgba(255, 255, 255, 0.8);
-    --heading-font: "DM Sans", sans-serif;
-}
-
-body {
-    background-color: var(--DarkCyans);
-}
+  body {
+    background-color: var(--theme-background); // Altera o fundo com base no tema
+  }

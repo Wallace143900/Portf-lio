@@ -3,10 +3,12 @@ import { MdOutlineMail } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import styles from "./styles.module.scss";
+import { useDarkMode } from "../context/DarkModeContext";
 
 export const Footer = forwardRef((props, ref)  => {
   const footerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +36,7 @@ export const Footer = forwardRef((props, ref)  => {
   }, []);
 
   return (
-    <footer className={`${styles.footer} ${isVisible ? styles.show : ''}`} ref={footerRef} >
+    <footer className={`${styles.footer} ${isDarkMode ? styles.dark : ''} ${isVisible ? styles.show : ''}`} ref={footerRef} >
       <div className={styles.innerFooter} ref={ref}>
         <h2 className="title2">Contatos</h2>
         <div className={styles.containerContato}>

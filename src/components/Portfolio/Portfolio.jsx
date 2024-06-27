@@ -6,7 +6,7 @@ export const Portfolio = forwardRef((props, ref)  => {
     return (
         <section className={styles.portfolio} ref={ref}>
             <h2 className="title2">Portfólio</h2>
-            <MyProjects />
+            <MyProjects/>
         </section>
     )
 });
