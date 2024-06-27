@@ -1,58 +1,61 @@
-section {
+.section {
     width: 100%;
-
-    .divSectionSkill{
-        width: 85%;
-        margin: 0 auto;
+  }
+  
+  .divSectionSkill {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  
+    h2 {
+      color: var(--White-write);
+    }
+  
+    .ulImg {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 30px;
+      opacity: 0;
+      transform: translateX(-50%);
+  
+      &.show {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+  
+      .DivImg {
+        width: 12rem;
+        background: var(--Card-Tecnologies);
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-
-        h2{
-            color: var(--White-write);
+        gap: 20px;
+        border-bottom: 3px solid var(--LightCyan);
+        border-radius: 12px 0 0 0;
+        padding: 20px;
+  
+        p {
+          color: var(--LightCyan);
+          margin-top: 10px;
+          font-family: var(--heading-font);
+          font-size: 22px;
+          font-weight: 500;
         }
-            
-            .ulImg{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;
-                gap: 30px;
-    
-                .DivImg{
-                    width: 12rem;
-                    background: var(--Card-Tecnologies);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 20px;
-                    border-bottom: 3px solid var(--LightCyan);
-                    border-radius: 12px 0 0 0;
-
-                    p{
-                        color: var(--LightCyan);
-                        margin-top: 10px;
-                        font-family: var(--heading-font);
-                        font-size: 22px;
-                        font-weight: 500;
-                    }
-
-                    .icons {
-                        width: 40px;
-                        height: 40px;
-                        color: var(--LightCyan);
-                        display: flex;
-                        justify-items: center;
-                        align-items: center;
-                        transition: 0.6s; 
-                        transition-timing-function: cubic-bezier(0.42, 0, 0.32, 0.64);
-                        margin-bottom: 10px;
-                    }
-
-            }
-                
+  
+        .icons {
+          width: 40px;
+          height: 40px;
+          color: var(--LightCyan);
+          transition: transform 0.5s ease-in-out;
+          transform: translateX(50%);
         }
-            
+      }
     }
-}
+  }
+  

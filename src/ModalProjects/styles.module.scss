@@ -1,0 +1,84 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.671); /* Fundo semi-transparente */
+    z-index: 1000; /* Ajuste conforme necessário */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modalContent {
+        background-color: var(--DarkCyans);
+        border-radius: 8px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        max-height: 600px;
+
+        .closeButton {
+            position: absolute;
+            top: 185px;
+            right: 170px;
+            color: var(--White-write);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            background: var(--Cyan-write);
+            border-radius: 40px;
+          }
+
+        .modalCenter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .left{
+                width: 55%;
+
+                img{
+                    width: 500px;
+                    height: 350px;
+                    margin-left: 60px;
+                    margin-bottom: 20px;
+                }
+
+                .divButtons{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    a{
+                        background: linear-gradient(-1855deg, var(--StrongCyan), var(--LightCyan));
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--White-write);
+                    }
+                }
+            }
+
+            .right{
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2{
+                    margin-top: 0px;
+                }
+
+                p{
+                    color: var(--Cyan-write);
+                    font-size: 14px;
+                }
+            }
+          }
+      }
+  }
