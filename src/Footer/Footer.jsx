@@ -36,7 +36,7 @@ export const Footer = forwardRef((props, ref)  => {
   }, []);
 
   return (
-    <footer className={`${styles.footer} ${isDarkMode ? styles.dark : ''} ${isVisible ? styles.show : ''}`} ref={footerRef} >
+    <footer style={{ background: isDarkMode ? 'var(--DarkCyans)' : 'var(--DarkCyans-light)' }} className={`${styles.footer} ${isVisible ? styles.show : ''}`} ref={footerRef} >
       <div className={styles.innerFooter} ref={ref}>
         <h2 className="title2">Contatos</h2>
         <div className={styles.containerContato}>

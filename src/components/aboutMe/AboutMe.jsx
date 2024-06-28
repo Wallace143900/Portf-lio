@@ -1,10 +1,14 @@
 import React, { forwardRef } from "react";
 import styles from "./styles.module.scss";
 import { FaUniversity } from "react-icons/fa";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 export const AboutMe = forwardRef((props, ref)  => {
+  
+  const { isDarkMode } = useDarkMode();
+
   return (
-    <section ref={ref}>
+    <section style={{ background: isDarkMode ? 'var(--DarkCyans)' : 'var(--DarkCyans-light)' }} ref={ref}>
       <div className={styles.divContainerAbouMe}>
         <div className={styles.aboutMe}>
           <h2 className="title2">Sobre Mim</h2>

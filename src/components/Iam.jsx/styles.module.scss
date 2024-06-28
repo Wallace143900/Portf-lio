@@ -1,11 +1,12 @@
 section{
     width: 100%;
-
+    
     .divSection{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 80%;
+        height: 600px;
         margin: 0 auto;
         margin-top: 100px;
     
@@ -16,7 +17,7 @@ section{
             gap: 20px;
 
             #paragraphy{
-                color: var(--White-write);
+                color: var(--theme-text);
             }
 
             #title1{
@@ -24,7 +25,7 @@ section{
             }
 
             h4{
-                color: var(--Cyan-write);
+                color: var(--theme-text);
             }
             
             .divButtons{
@@ -43,8 +44,8 @@ section{
                 }
 
                 #buttonContato{
-                    color: var(--White-write);
-                    background: var(--DarkCyans);
+                    color: var(--theme-text);
+                    background: var(--theme-background);
                     display: flex;
                     justify-content: center;
                     align-items: center;

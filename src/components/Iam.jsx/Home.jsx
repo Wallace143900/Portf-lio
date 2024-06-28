@@ -1,9 +1,13 @@
 import fotoCurriculo from "../../assets/Foto portfolio.jpg";
+import { useDarkMode } from "../../context/DarkModeContext";
 import styles from "./styles.module.scss";
 
 export const Home = () => {
+
+    const { isDarkMode } = useDarkMode();
+
     return (
-        <section>
+        <section style={{ background: isDarkMode ? 'var(--DarkCyans)' : 'var(--DarkCyans-light)' }}>
             <div className={styles.divSection}> 
                 <div className={styles.DivMe}>
                     <p className="paragraphy" id={styles.paragraphy}>Olá, Eu sou</p>

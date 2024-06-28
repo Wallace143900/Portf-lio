@@ -1,25 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root {
-    // Cores para o tema escuro
-    --LightCyan: #15971b;
-    --DarkCyans: #13131F;
-    --StrongCyan: #0a5a0e;
-  
-    // Cores para o tema claro
-    --LightCyan-light: #78ff7c;
-    --DarkCyans-light: #ffffff;
-    --StrongCyan-light: #3fa242;
-    
-    // Cores gerais
-    --White-write: #F9F9F9;
-    --Cyan-write: #828282;
-  
-    // Variável para alternar entre temas
-    --theme-background: if($dark-theme, var(--DarkCyans), var(--DarkCyans-light));
-    --theme-text: if($dark-theme, var(--White-write), var(--DarkCyans-light));
-  }
+  // Cores para o tema escuro
+  --LightCyan: #15971b;
+  --DarkCyans: #13131F;
+  --StrongCyan: #0a5a0e;
+  --li-color-dark: #dfdfdf; // Cor para o texto das `li` no modo escuro
 
-  body {
-    background-color: var(--theme-background); // Altera o fundo com base no tema
-  }
+  // Cores para o tema claro
+  --LightCyan-light: #78ff7c;
+  --DarkCyans-light: #dfdfdf;
+  --StrongCyan-light: #3fa242;
+  --li-color-light: #13131F; // Cor para o texto das `li` no modo claro
+  
+  // Cores gerais
+  --White-write: #dfdfdf;
+  --Cyan-write: #7a7a7a;
+  --Card-tecnologies: #212121;
+
+  --heading-font: "Roboto", sans-serif;
+}
+
+body.dark-mode {
+  --theme-background: var(--DarkCyans);
+  --theme-text: var(--li-color-dark);
+}
+
+body.light-mode {
+  --theme-background: var(--DarkCyans-light);
+  --theme-text: var(--li-color-light);
+}

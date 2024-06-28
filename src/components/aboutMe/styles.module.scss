@@ -3,8 +3,8 @@ section{
     
     .divContainerAbouMe{
         width: 100%;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        height: 700px;
+        
 
         
         .aboutMe{
@@ -17,7 +17,7 @@ section{
             
             h2{
                 font-family: var(--heading-font);
-                color: var(--White-write);
+                color: var(--theme-text);
                 font-size: 32px;
                 margin-bottom: 40px;
                 margin-top: 60px;

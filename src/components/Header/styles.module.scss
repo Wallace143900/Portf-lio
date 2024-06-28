@@ -1,10 +1,9 @@
 header{
-
     display: flex;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 2000;
     transition: background-color 0.3s ease;
 
     nav{
@@ -37,18 +36,14 @@ header{
                     font-family: var(--heading-font);
                     font-size: 18px;
                     font-weight: 400;
-                    color: var(--White-write);
+                    color: var(--theme-text);
                     cursor: pointer;
                 }
     
                 li:hover{
                     margin-bottom: 5px;
-                    border-bottom: 2px solid var(--White-write);
+                    border-bottom: 2px solid var(--theme-text);
                     transition: 0.2s;
-                }
-    
-                .icone{
-                    color: var(--LightCyan);
                 }
             }
         }
