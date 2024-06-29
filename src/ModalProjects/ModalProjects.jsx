@@ -12,7 +12,7 @@ export const ModalProjects = ({ projectDetails, onClose }) => {
   const isBackend = projectDetails.technologies.includes("Node.js");
 
   return (
-    <dialog open className={styles.modal}>
+    <div open className={styles.modal}>
       <div style={{ background: isDarkMode ? 'var(--DarkCyans)' : 'var(--DarkCyans-light)' }} className={styles.modalContent}>
         <button className={styles.closeButton} onClick={onClose}>X</button>
         <div className={styles.modalCenter}>
@@ -32,7 +32,7 @@ export const ModalProjects = ({ projectDetails, onClose }) => {
           </div>
         </div>
       </div>
-    </dialog>
+    </div>
   );
 };
 

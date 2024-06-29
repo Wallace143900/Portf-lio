@@ -6,6 +6,23 @@
     width: 100%;
     height: 400px;
     text-align: center;
+    margin-top: 250px;
+
+    @media (ax-width: 320px) {
+      height: auto;
+    }
+
+    @media (ax-width: 375px) {
+      height: auto;
+    }
+
+    @media (ax-width: 425px) {
+      height: auto;
+    }
+
+    @media (ax-width: 768px) {
+      height: auto;
+    }
   }
 
   
@@ -16,7 +33,7 @@
   .innerFooter {
     opacity: 0;
     transform: translateX(-50%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     width: 60%;
     margin: 0 auto;
 
@@ -33,16 +50,32 @@
   
   .containerContato {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 320px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 375px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 425px) {
+    flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    }
+
   }
   
   .contato {
-    text-align: center;
-    padding: 10px;
-  
+
     .divIconContato {
-      width: 65px;
-      height: 65px;
+      width: 75px;
+      height: 75px;
       background: #2a2a2a;
       border-radius: 50%;
       display: flex;
@@ -50,35 +83,107 @@
       align-items: center;
       margin: 0 auto;
       margin-bottom: 10px;
+
+      @media (max-width: 320px) {
+        width: 45px;
+        height: 35px;
+    }
+
+    @media (max-width: 375px) {
+      width: 55px;
+      height: 55px;
+  }
+
+  @media (max-width: 425px) {
+    width: 65px;
+    height: 65px;
+}
+
+@media (max-width: 768px) {
+  width: 70px;
+  height: 70px;
+}
   
       .iconContato {
         width: 40px;
         height: 40px;
         color: var(--LightCyan);
+
+        @media (max-width: 320px) {
+          width: 25px;
+          height: 25px;
+      }
+
+      @media (max-width: 375px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-width: 425px) {
+      width: 35px;
+      height: 35px;
+  }
+
       }
     }
   
     a {
       text-decoration: none;
       color: var(--White-write);
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 280px;
+
+      @media (max-width: 320px) {
+        width: 180px;
+        height: 180px;
     }
-  
+
+    @media (max-width: 375px) {
+      width: 200px;
+      height: 200px;
+  }
+
+  @media (max-width: 425px) {
+    width: 230px;
+    height: 230px;
+}
+
+@media (max-width: 768px) {
+  width: 250px;
+  height: 250px;
+}
+    
     h4 {
       margin-top: 15px;
       margin-bottom: 15px;
       color: var(--theme-text);
     }
-  
+    
     p {
       color: var(--Cyan-write);
+      
+      @media (max-width: 320px) {
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 19px;
+        font-weight: 300;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 21px;
+        font-weight: 300;
+      }
     }
   }
-  
-  .disoriaBackFront {
-    height: 2px;
-    margin: 0 auto;
-    background: var(--LightCyan);
-    margin-top: 10px;
-  }
+}
   

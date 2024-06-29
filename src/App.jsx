@@ -42,7 +42,7 @@ function App() {
           scrollToFooter={scrollToFooter}
         />
         <Home />
-        <AboutMe id="about" ref={aboutRef} /> {/* Passando a referência para AboutMe */}
+        <AboutMe id="about" ref={aboutRef} />
         <Skill />
         <Portfolio id="portfolio" ref={portfolioRef} />
         <Footer id="footer" ref={footerRef} />

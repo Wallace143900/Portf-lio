@@ -5,7 +5,25 @@ section{
         width: 100%;
         height: 700px;
         
+        @media (max-width: 320px) {
+            height: auto;
+            margin-bottom: 150px;
+        }
 
+        @media (max-width: 375px) {
+            height: auto;
+            margin-bottom: 150px;
+        }
+
+        @media (max-width: 425px) {
+            height: auto;
+            margin-bottom: 150px;
+        }
+
+        @media (max-width: 768px) {
+            height: auto;
+            margin-bottom: 150px;
+        }
         
         .aboutMe{
 
@@ -21,12 +39,50 @@ section{
                 font-size: 32px;
                 margin-bottom: 40px;
                 margin-top: 60px;
+
+                @media (max-width: 320px) {
+                    margin-top: 150px;
+                }
+
+                @media (max-width: 375px) {
+                    margin-top: 150px;
+                }
+        
+                @media (max-width: 425px) {
+
+                    margin-top: 150px;
+                }
+        
+                @media (max-width: 768px) {
+
+                    margin-top: 150px;
+                }
             }
             
             #paragraphy{
                 color: var(--Cyan-write);
                 width: 65%;
                 text-align: center;
+
+                @media (max-width: 320px) {
+                    width: 100%;
+                    font-size: 16px;
+                }
+
+                @media (max-width: 375px) {
+                    width: 100%;
+                    font-size: 17px;
+                }
+        
+                @media (max-width: 425px) {
+                    width: 100%;
+                    font-size: 18px;
+                }
+        
+                @media (max-width: 768px) {
+                    width: 100%;
+                    font-size: 19px;
+                }
             }
             
             
@@ -46,6 +102,26 @@ section{
             align-items: center;
             margin-top: 20px;
             gap: 15px;
+
+            @media (max-width: 320px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            @media (max-width: 375px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            @media (max-width: 425px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+    
+            @media (max-width: 768px) {
+                width: 90%;
+                margin: 0 auto;
+            }
             
             
             .locals{
@@ -54,15 +130,76 @@ section{
                 align-items: center;
                 gap: 20px;
 
+                @media (max-width: 320px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                @media (max-width: 375px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+        
+                @media (max-width: 425px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+        
+                @media (max-width: 768px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
                 .iconLocal{
                     width: 30px;
                     height: 30px;
                     color: var(--White-write);
+
+                    @media (max-width: 320px) {
+                        margin-top: 60px;
+                    }
+
+                    @media (max-width: 375px) {
+                        margin-top: 60px;
+                    }
+            
+                    @media (max-width: 425px) {
+                        margin-top: 60px;
+                    }
+            
+                    @media (max-width: 768px) {
+                        margin-top: 40px;
+                    }
                 }
                 
                 h2{
                     font-family: var(--heading-font);
                     color: var(--Cyan-write);
+
+                    @media (max-width: 320px) {
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                    @media (max-width: 375px) {
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-top: 60px;
+                    }
+            
+                    @media (max-width: 425px) {
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+            
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
                 }
                 
             }
@@ -70,6 +207,35 @@ section{
             #paragraphy{
                 font-family: var(--heading-font);
                 color: var(--Cyan-write);
+
+                @media (max-width: 320px) {
+                    width: 90%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+                @media (max-width: 375px) {
+                    width: 90%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+        
+                @media (max-width: 425px) {
+                    width: 90%;
+                    font-size: 19px;
+                    font-weight: 500;
+                    text-align: center;
+                    text-align: center;
+                }
+        
+                @media (max-width: 768px) {
+                    width: 90%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: center;
+                }
             }
         }
     }

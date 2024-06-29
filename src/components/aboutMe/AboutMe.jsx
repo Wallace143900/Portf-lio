@@ -2,6 +2,8 @@ import React, { forwardRef } from "react";
 import styles from "./styles.module.scss";
 import { FaUniversity } from "react-icons/fa";
 import { useDarkMode } from "../../context/DarkModeContext";
+import { FiMenu } from "react-icons/fi";
+
 
 export const AboutMe = forwardRef((props, ref)  => {
   
@@ -30,7 +32,7 @@ export const AboutMe = forwardRef((props, ref)  => {
             <h2>Curso de Programação - Kenzie Academy, Rio de Janeiro</h2>
           </div>
           <p className="paragraphy" id={styles.paragraphy}>
-            <strong>Formado -</strong> Desenvolvedor Front End
+            <strong>Formado -</strong> Desenvolvedor Front End - 09/2023-03/2024
           </p>
         </div>
       </div>

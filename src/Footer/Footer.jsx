@@ -77,7 +77,6 @@ export const Footer = forwardRef((props, ref)  => {
             </a>
           </div>
         </div>
-        <div className={styles.disoriaBackFront}></div>
       </div>
     </footer>
   );

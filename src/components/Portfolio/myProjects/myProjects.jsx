@@ -29,7 +29,6 @@ import { SiTypescript, SiExpress, SiPostgresql, SiPrisma, SiDotnet, SiCsharp } f
 export const MyProjects = forwardRef((props, ref) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const projectsRef = useRef(null);
   const [currentFrontIndex, setCurrentFrontIndex] = useState(0);
   const [currentBackIndex, setCurrentBackIndex] = useState(0);
 
@@ -163,23 +162,21 @@ export const MyProjects = forwardRef((props, ref) => {
         <div className={styles.Container_FrontEnd}>
           <h3 className="title3">Front-End</h3>
           <div className={styles.divImgProject}>
-          <button className={styles.prevNextButton} onClick={() => handlePrev('front')}>&#8249;</button>
-            {projectFront.slice(currentFrontIndex, currentFrontIndex + 3).map((project, index) => (
-              <div className={styles.skillsImgProject} key={index}>
-                <img src={project.img} alt={project.title} />
-                <div className={styles.descriptionProjects}>
-                  <h4 className="title4">{project.title}</h4>
-                  <div className={styles.iconsProjects}>
-                    {project.technologies.includes("HTML5") && <FaHtml5 className={styles.i} />}
-                    {project.technologies.includes("CSS3") && <FaCss3Alt className={styles.i} />}
-                    {project.technologies.includes("JavaScript") && <IoLogoJavascript className={styles.i} />}
-                    {project.technologies.includes("React") && <FaReact className={styles.i} />}
-                    {project.technologies.includes("Sass") && <FaSass className={styles.i} />}
-                  </div>
-                  <button className={styles.hidden_button} onClick={() => openModal(project)}>Ver mais</button>
+            <button className={styles.prevNextButton} onClick={() => handlePrev('front')}>&#8249;</button>
+            <div className={styles.skillsImgProject}>
+              <img src={projectFront[currentFrontIndex].img} alt={projectFront[currentFrontIndex].title} />
+              <div className={styles.descriptionProjects}>
+                <h4 className="title4">{projectFront[currentFrontIndex].title}</h4>
+                <div className={styles.iconsProjects}>
+                  {projectFront[currentFrontIndex].technologies.includes("HTML5") && <FaHtml5 className={styles.i} />}
+                  {projectFront[currentFrontIndex].technologies.includes("CSS3") && <FaCss3Alt className={styles.i} />}
+                  {projectFront[currentFrontIndex].technologies.includes("JavaScript") && <IoLogoJavascript className={styles.i} />}
+                  {projectFront[currentFrontIndex].technologies.includes("React") && <FaReact className={styles.i} />}
+                  {projectFront[currentFrontIndex].technologies.includes("Sass") && <FaSass className={styles.i} />}
                 </div>
+                <button className={styles.hidden_button} onClick={() => openModal(projectFront[currentFrontIndex])}>Ver mais</button>
               </div>
-            ))}
+            </div>
             <button className={styles.prevNextButton} onClick={() => handleNext('front')}>&#8250;</button>
           </div>
         </div>
@@ -188,24 +185,22 @@ export const MyProjects = forwardRef((props, ref) => {
           <h3 className="title3">Back-End</h3>
           <div className={styles.divImgProject}>
             <button className={styles.prevNextButton} onClick={() => handlePrev('back')}>&#8249;</button>
-            {projectBack.slice(currentBackIndex, currentBackIndex + 3).map((project, index) => (
-              <div className={styles.skillsImgProject} key={index}>
-                <img src={project.img} alt={project.title} />
-                <div className={styles.descriptionProjects}>
-                  <h4 className="title4">{project.title}</h4>
-                  <div className={styles.iconsProjects}>
-                    {project.technologies.includes("TypeScript") && <SiTypescript className={styles.i} />}
-                    {project.technologies.includes("Node.js") && <FaNodeJs className={styles.i} />}
-                    {project.technologies.includes("Express") && <SiExpress className={styles.i} />}
-                    {project.technologies.includes("PostgreSQL") && <SiPostgresql className={styles.i} />}
-                    {project.technologies.includes("Prisma") && <SiPrisma className={styles.i} />}
-                    {project.technologies.includes("Dotnet") && <SiDotnet className={styles.i} />}
-                    {project.technologies.includes("CSharp") && <SiCsharp className={styles.i} />}
-                  </div>
-                  <button className={styles.hidden_button} onClick={() => openModal(project)}>Ver mais</button>
+            <div className={styles.skillsImgProject}>
+              <img src={projectBack[currentBackIndex].img} alt={projectBack[currentBackIndex].title} />
+              <div className={styles.descriptionProjects}>
+                <h4 className="title4">{projectBack[currentBackIndex].title}</h4>
+                <div className={styles.iconsProjects}>
+                  {projectBack[currentBackIndex].technologies.includes("TypeScript") && <SiTypescript className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("Node.js") && <FaNodeJs className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("Express") && <SiExpress className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("PostgreSQL") && <SiPostgresql className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("Prisma") && <SiPrisma className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("Dotnet") && <SiDotnet className={styles.i} />}
+                  {projectBack[currentBackIndex].technologies.includes("CSharp") && <SiCsharp className={styles.i} />}
                 </div>
-              </div> 
-            ))}
+                <button className={styles.hidden_button} onClick={() => openModal(projectBack[currentBackIndex])}>Ver mais</button>
+              </div>
+            </div>
             <button className={styles.prevNextButton} onClick={() => handleNext('back')}>&#8250;</button>
           </div>
         </div>

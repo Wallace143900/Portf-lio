@@ -2,19 +2,19 @@
 
 
 :root {
-  // Cores para o tema escuro
+  
   --LightCyan: #15971b;
   --DarkCyans: #13131F;
   --StrongCyan: #0a5a0e;
-  --li-color-dark: #dfdfdf; // Cor para o texto das `li` no modo escuro
+  --li-color-dark: #dfdfdf; 
 
-  // Cores para o tema claro
+  
   --LightCyan-light: #78ff7c;
   --DarkCyans-light: #dfdfdf;
   --StrongCyan-light: #3fa242;
-  --li-color-light: #13131F; // Cor para o texto das `li` no modo claro
+  --li-color-light: #13131F; 
   
-  // Cores gerais
+ 
   --White-write: #dfdfdf;
   --Cyan-write: #7a7a7a;
   --Card-tecnologies: #212121;
@@ -30,4 +30,9 @@ body.dark-mode {
 body.light-mode {
   --theme-background: var(--DarkCyans-light);
   --theme-text: var(--li-color-light);
+}
+
+body{
+  background: var(--theme-background);
+  width: 100%;
 }
