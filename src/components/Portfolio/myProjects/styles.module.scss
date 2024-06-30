@@ -114,6 +114,7 @@ article {
                     height: 350px;
                     transition: transform 0.3s ease, filter 0.3s ease;
                     filter: brightness(10%);
+                    border-radius: 5px;
 
                     @media (max-width: 320px) {
                         width: 100%;
@@ -192,6 +193,10 @@ article {
                         gap: 15px;
                         margin-top: 15px;
                         color: var(--LightCyan);
+
+                        @media (max-width: 320px) {
+                            gap: 0;
+                        }
                         
                         .i {
                             width: 80px;

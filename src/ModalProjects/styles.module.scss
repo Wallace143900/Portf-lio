@@ -71,23 +71,27 @@
             .left {
                 width: 55%;
 
+                @media (max-width: 375px) {
+                    width: 75%;
+                }
+
                 video {
                     width: 550px;
                     height: 300px;
                     margin-bottom: 20px;
 
                     @media (max-width: 320px) {
-                        width: 250px;
+                        width: 260px;
                         height: 220px;
-                        margin-left: -55px;
                         margin-top: 250px;
+                        margin-left: -55px;
                     }
 
                     @media (max-width: 375px) {
-                        width: 550px;
-                        height: 300px;
-                        margin-left: -125px;
+                        width: 270px;
+                        height: 220px;
                         margin-top: 250px;
+                        margin-left: -10px;
                     }
                 }
 
@@ -122,9 +126,10 @@
                         }
 
                         @media (max-width: 375px) {
-                            width: 900px;
+                            width: 200px;
                             height: 50px;
                             font-size: 16px;
+                            margin-right: 120px;
                         }
 
                     }
