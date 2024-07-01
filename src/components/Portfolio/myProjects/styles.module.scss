@@ -73,7 +73,6 @@ article {
                 transition: background-color 0.3s ease;
                 font-size: 160px;
                 margin-bottom: 50px;
-                background-color: aqua;
                 
                 &:hover {
                     color: var(--Cyan-write);
@@ -84,29 +83,28 @@ article {
                 }
 
                 @media (max-width: 768px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
                 
                 @media (max-width: 425px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
                 
                 @media (max-width: 375px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
                    
                 @media (max-width: 320px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
             }
             
             .skillsImgProject {
                 position: relative;
                 display: inline-block;
-                // overflow: hidden;
+                overflow: hidden;
                 margin-bottom: 40px;
                 width: 530px;
-                // background-color: aqua;
                 
                 img {
                     width: 530px;
@@ -400,15 +398,15 @@ article {
                 }
 
                 @media (max-width: 375px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
 
                 @media (max-width: 425px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
 
                 @media (max-width: 768px) {
-                    font-size: 100px;
+                    font-size: 40px;
                 }
             }
             
