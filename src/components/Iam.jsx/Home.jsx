@@ -1,4 +1,4 @@
-import fotoCurriculo from "../../assets/Foto portfolio.jpg";
+import fotoCurriculo from "../../../public/Foto portfolio.jpg";
 import { useDarkMode } from "../../context/DarkModeContext";
 import styles from "./styles.module.scss";
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
-import TrashImg from "../../assets/logo_wallace_verde.png";
+import TrashImg from "../../../public/logo_wallace_verde.png";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useDarkMode } from "../../context/DarkModeContext";
 import { FaBars, FaTimes } from "react-icons/fa";

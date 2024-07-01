@@ -1,27 +1,27 @@
 import React, { useState, forwardRef, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import ModalProjects from "../../../ModalProjects/ModalProjects";
-import MyTasks from "../../../assets/fotos para projetos/MyTasks.jpg";
-import SiteGenerico from "../../../assets/fotos para projetos/SiteGenerico.jpg";
-import Portfolio from "../../../assets/fotos para projetos/Portfolio.jpg";
-import Calculadora from "../../../assets/fotos para projetos/Calculadora.jpg";
-import PrevisaoTempo from "../../../assets/fotos para projetos/PrevisaoTempo.jpg";
-import ControlFinance from "../../../assets/fotos para projetos/ControlFinance.jpg";
-import Hamburgueria from "../../../assets/fotos para projetos/Burguer.jpg";
-import KenzieHub from "../../../assets/fotos para projetos/KenzieHub.jpg";
-import Entrega1 from "../../../assets/fotos para projetos/entrega1_kenzie.jpg";
-import videoMyTasks from "../../../assets/fotos para projetos/myTasks.mp4";
-import videoSiteGenerico from "../../../assets/fotos para projetos/siteGenerico.mp4";
-import videoPortfolio from "../../../assets/fotos para projetos/portfolio.mp4";
-import calculadora from "../../../assets/fotos para projetos/calculadora.mp4";
-import previsaoTempo from "../../../assets/fotos para projetos/previsaoTempo.mp4";
-import videoControlFinance from "../../../assets/fotos para projetos/controlFinance.mp4";
-import videoHamburgueria from "../../../assets/fotos para projetos/burguer.mp4";
-import videoKenzieHub from "../../../assets/fotos para projetos/kenzieHub.mp4";
-import videoApi1 from "../../../assets/fotos para projetos/api1.mp4";
-import videoApi2Prisma from "../../../assets/fotos para projetos/api2Prisma.mp4";
-import videoApi3Prisma from "../../../assets/fotos para projetos/api3Prisma.mp4";
-import videoEstacionamento from "../../../assets/fotos para projetos/estacionamento.mp4";
+// import MyTasks from "../../../../public/MyTasks.jpg";
+import SiteGenerico from "../../../../public/SiteGenerico.jpg";
+import Portfolio from "../../../../public/Portfolio.jpg";
+import Calculadora from "../../../../public/Calculadora.jpg";
+import PrevisaoTempo from "../../../../public/PrevisaoTempo.jpg";
+import ControlFinance from "../../../../public/ControlFinance.jpg";
+import Hamburgueria from "../../../../public/Burguer.jpg";
+import KenzieHub from "../../../../public/KenzieHub.jpg";
+import Entrega1 from "../../../../public/entrega1_kenzie.jpg";
+import videoMyTasks from "../../../../public/myTasks.mp4";
+import videoSiteGenerico from "../../../../public/siteGenerico.mp4";
+import videoPortfolio from "../../../../public/portfolio.mp4";
+import calculadora from "../../../../public/calculadora.mp4";
+import previsaoTempo from "../../../../public/previsaoTempo.mp4";
+import videoControlFinance from "../../../../public/controlFinance.mp4";
+import videoHamburgueria from "../../../../public/burguer.mp4";
+import videoKenzieHub from "../../../../public/kenzieHub.mp4";
+import videoApi1 from "../../../../public/api1.mp4";
+import videoApi2Prisma from "../../../../public/api2Prisma.mp4";
+import videoApi3Prisma from "../../../../public/api3Prisma.mp4";
+import videoEstacionamento from "../../../../public/estacionamento.mp4";
 import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiExpress, SiPostgresql, SiPrisma, SiDotnet, SiCsharp } from "react-icons/si";
@@ -35,7 +35,7 @@ export const MyProjects = forwardRef((props, ref) => {
   const projectFront = [
     {
       title: "Lista de Tarefas",
-      img: MyTasks,
+      img: "/MyTasks.jpg",
       video: videoMyTasks,
       technologies: ["HTML5", "CSS3", "JavaScript"],
       linkProjeto: "https://wallace143900.github.io/Lista-de-tarefas/",
