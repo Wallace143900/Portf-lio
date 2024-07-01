@@ -78,7 +78,7 @@ export const Header = ({ scrollToSkills, scrollToPortfolio, scrollToFooter }) =>
                   {isMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
                 </button>
           </div>
-          <h3 className="title3">Bem Vido ao meu Portfólio</h3>
+          <h3 className="title3">Bem Vindo ao meu Portfólio :)</h3>
           <li className="paragraphy" onClick={scrollToTop}>Início</li>
           <li className="paragraphy" onClick={handleScrollToSkills}>Sobre</li>
           <li className="paragraphy" onClick={handleScrollToPortfolio}>Portfólio</li>

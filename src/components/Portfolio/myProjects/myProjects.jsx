@@ -1,15 +1,15 @@
 import React, { useState, forwardRef, useEffect, useRef } from "react";
 import styles from "./styles.module.scss";
 import ModalProjects from "../../../ModalProjects/ModalProjects";
-// import MyTasks from "../../../../public/MyTasks.jpg";
-import SiteGenerico from "../../../../public/SiteGenerico.jpg";
-import Portfolio from "../../../../public/Portfolio.jpg";
-import Calculadora from "../../../../public/Calculadora.jpg";
-import PrevisaoTempo from "../../../../public/PrevisaoTempo.jpg";
-import ControlFinance from "../../../../public/ControlFinance.jpg";
-import Hamburgueria from "../../../../public/Burguer.jpg";
-import KenzieHub from "../../../../public/KenzieHub.jpg";
-import Entrega1 from "../../../../public/entrega1_kenzie.jpg";
+// import MyTasks from "../../../../public/myTasks.svg";
+// import SiteGenerico from "../../../../public/siteGenerico.svg";
+import Portfolio from "../../../../public/portfolio.svg";
+import Calculadora from "../../../../public/calculadora.svg";
+import PrevisaoTempo from "../../../../public/previsaoTempo.svg";
+import ControlFinance from "../../../../public/controlFinance.svg";
+import Hamburgueria from "../../../../public/burguer.svg";
+import KenzieHub from "../../../../public/kenzieHub.svg";
+import Entrega1 from "../../../../public/backEnd.svg";
 import videoMyTasks from "../../../../public/myTasks.mp4";
 import videoSiteGenerico from "../../../../public/siteGenerico.mp4";
 import videoPortfolio from "../../../../public/portfolio.mp4";
@@ -35,7 +35,7 @@ export const MyProjects = forwardRef((props, ref) => {
   const projectFront = [
     {
       title: "Lista de Tarefas",
-      img: "/MyTasks.jpg",
+      img: "/myTasks.svg",
       video: videoMyTasks,
       technologies: ["HTML5", "CSS3", "JavaScript"],
       linkProjeto: "https://wallace143900.github.io/Lista-de-tarefas/",
@@ -45,7 +45,7 @@ export const MyProjects = forwardRef((props, ref) => {
     },
     {
       title: "Site Genérico",
-      img: SiteGenerico,
+      img: "/siteGenerico.svg",
       video: videoSiteGenerico,
       technologies: ["HTML5", "CSS3", "JavaScript"],
       linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_estava-sumido-mas-ontem-terminei-minha-activity-7155001228714745856-NndG?utm_source=share&utm_medium=member_desktop",

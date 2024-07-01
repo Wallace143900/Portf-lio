@@ -46,7 +46,7 @@ export const Footer = forwardRef((props, ref)  => {
                 <MdOutlineMail className={styles.iconContato} />
               </div>
               <h4 className="title4">E-mail</h4>
-              <p className="paragraphy">wallaexecutivo1000@gmail.com</p>
+              <p className="paragraphy" id={styles.email}>wallaexecutivo1000@gmail.com</p>
             </a>
           </div>
           <div className={styles.contato}>
