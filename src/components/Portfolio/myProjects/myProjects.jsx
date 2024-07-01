@@ -128,7 +128,7 @@ export const MyProjects = forwardRef((props, ref) => {
           video: videoApi1,
           technologies: ["TypeScript", "Node.js", "Express"],
           linkGithub: "https://github.com/Wallace143900/API-Rest-com-Express.ts",
-          linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-activity-7173015631720505346-fK3E?utm_source=share&utm_medium=member_desktop",
+          linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-desenvolvedorfrontend-desenvolvedorbackend-activity-7188653058703114241-7e4B?utm_source=share&utm_medium=member_desktop",
           description: "Este projeto consiste em uma API simples para gerenciamento de produtos, desenvolvida com Node.js e Express. A aplicação oferece endpoints para criar, listar, atualizar e excluir produtos, utilizando um array em memória para armazenamento dos dados. Cada produto possui um identificador único, nome, preço, data de criação e, opcionalmente, data de atualização. Os endpoints são implementados com funções que manipulam diretamente o array de produtos, garantindo operações básicas de CRUD. O projeto utiliza TypeScript para garantir tipagem estática e interfaces bem definidas para os dados de produto, como nome e preço. Este sistema simples permite a adição, remoção e atualização de produtos, demonstrando conceitos fundamentais de desenvolvimento de APIs RESTful com Node.js e Express."
         },
         {
@@ -155,7 +155,7 @@ export const MyProjects = forwardRef((props, ref) => {
             video: videoApi2Prisma,
             technologies: ["TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL"],
             linkGithub: "https://github.com/Wallace143900/prisma-express",
-            linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-activity-7173015631720505346-fK3E?utm_source=share&utm_medium=member_desktop",
+            linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-desenvolvedorbackend-api-activity-7210006390076018689-kscR?utm_source=share&utm_medium=member_desktop",
             description: "Este projeto consiste em uma API para gerenciamento de oportunidades e inscrições, construída com Node.js, Express e Prisma ORM. A aplicação oferece endpoints para criar, listar, atualizar e excluir oportunidades, assim como para gerenciar inscrições relacionadas a cada oportunidade. Utilizamos middlewares para validação de entrada de dados e tratamento de erros, garantindo que apenas dados válidos sejam processados e retornando mensagens claras em caso de problemas. A integridade dos dados é mantida através de schemas definidos com Zod, que validam os dados recebidos antes de serem persistidos no banco de dados PostgreSQL. O projeto é estruturado de forma modular, com controllers para gerenciar as requisições HTTP, serviços para encapsular a lógica de negócios e models que definem a estrutura das entidades no banco de dados. Esta arquitetura permite uma fácil extensão e manutenção da aplicação, adequando-se a novos requisitos e escalabilidade futura."
         },
         {
