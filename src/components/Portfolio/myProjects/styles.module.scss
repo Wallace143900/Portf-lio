@@ -73,6 +73,7 @@ article {
                 transition: background-color 0.3s ease;
                 font-size: 160px;
                 margin-bottom: 50px;
+                background-color: aqua;
                 
                 &:hover {
                     color: var(--Cyan-write);
@@ -102,10 +103,10 @@ article {
             .skillsImgProject {
                 position: relative;
                 display: inline-block;
-                overflow: hidden;
+                // overflow: hidden;
                 margin-bottom: 40px;
                 width: 530px;
-                background-color: aqua;
+                // background-color: aqua;
                 
                 img {
                     width: 530px;
