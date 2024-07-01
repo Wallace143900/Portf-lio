@@ -66,36 +66,39 @@ article {
             }
 
             .prevNextButton {
-                background-color: transparent;
-                color: var(--LightCyan);
+                background: var(--Cyan-write);
+                color: var(--White-write);
                 border: none;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
-                font-size: 160px;
+                font-size: 32px;
+                width: 40px;
+                height: 40px;
                 margin-bottom: 50px;
+                border-radius: 10px;
                 
                 &:hover {
-                    color: var(--Cyan-write);
+                    background: linear-gradient(-1855deg, var(--StrongCyan), var(--LightCyan));
                 }
 
                 @media (max-width: 1024px) {
-                    font-size: 120px;
+                    
                 }
 
                 @media (max-width: 768px) {
-                    font-size: 40px;
+                    
                 }
                 
                 @media (max-width: 425px) {
-                    font-size: 40px;
+                    
                 }
                 
                 @media (max-width: 375px) {
-                    font-size: 40px;
+                    
                 }
                    
                 @media (max-width: 320px) {
-                    font-size: 40px;
+                    
                 }
             }
             
