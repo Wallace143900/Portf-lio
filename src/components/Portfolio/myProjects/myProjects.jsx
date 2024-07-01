@@ -106,6 +106,7 @@ export const MyProjects = forwardRef((props, ref) => {
           video: videoApi1,
           technologies: ["TypeScript", "Node.js", "Express"],
           linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-activity-7173015631720505346-fK3E?utm_source=share&utm_medium=member_desktop",
+          description: "Este projeto é uma API de gerenciamento de produtos, desenvolvida utilizando Express.js, que oferece funcionalidades para criar, atualizar, listar, obter e remover produtos. A estrutura está organizada em módulos, seguindo boas práticas de desenvolvimento para facilitar a manutenção e escalabilidade."
         },
         {
             title: "API Rest - Express And Prisma",
@@ -113,6 +114,7 @@ export const MyProjects = forwardRef((props, ref) => {
             video: videoApi2Prisma,
             technologies: ["TypeScript", "Node.js", "Express"],
             linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-activity-7173015631720505346-fK3E?utm_source=share&utm_medium=member_desktop",
+            description: "Este projeto é uma API para gerenciar oportunidades de trabalho e suas respectivas candidaturas, desenvolvida utilizando Express.js e Prisma. A estrutura do projeto está organizada para proporcionar segurança, validação e manipulação eficiente dos dados. A API possui as seguintes funcionalidades: criação de oportunidades (POST /opportunities) que recebe dados da oportunidade e retorna a oportunidade criada com status 201; listagem de oportunidades (GET /opportunities) que retorna um array de oportunidades com status 200; obtenção de uma oportunidade específica (GET /opportunities/:id) que retorna os dados de uma oportunidade específica com status 200; atualização de oportunidades (PATCH /opportunities/:id) que permite atualizar os dados de uma oportunidade e retorna a oportunidade atualizada com status 200; remoção de oportunidades (DELETE /opportunities/:id) que remove uma oportunidade específica e retorna status 204; criação de candidaturas (POST /opportunities/:id/applications) que recebe dados da candidatura e retorna a candidatura criada com status 201; e listagem de candidaturas (GET /opportunities/:id/applications) que retorna um array de candidaturas com status 200. A estrutura do projeto inclui controllers que definem as funções para lidar com requisições e respostas HTTP, services que contêm a lógica de negócios, schemas que definem os esquemas de validação e tipos usando Zod, middleware para validação e tratamento de erros, rotas que associam cada rota a um controlador específico, e a configuração do servidor que inicializa o servidor Express.js com Helmet para segurança e usa JSON para requisições e respostas, com a porta de escuta definida via variável de ambiente ou padrão 3000"
         },
         {
             title: "API Rest 2 - Express And Prisma",
