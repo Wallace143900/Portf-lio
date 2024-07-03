@@ -66,7 +66,7 @@ article {
             }
 
             .prevNextButton {
-                color: var(--White-write);
+                color: var(--theme-text);
                 border: none;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
@@ -119,7 +119,7 @@ article {
                     width: 530px;
                     height: 350px;
                     transition: transform 0.3s ease, filter 0.3s ease;
-                    filter: brightness(10%);
+                    filter: brightness(23%);
                     border-radius: 15px;
 
                     @media (max-width: 1024px) {
@@ -389,7 +389,7 @@ article {
             }
 
             .prevNextButton {
-                color: var(--White-write);
+                color: var(--theme-text);
                 border: none;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
@@ -458,7 +458,7 @@ article {
                     width: 530px;
                     height: 350px;
                     transition: transform 0.3s ease, filter 0.3s ease;
-                    filter: brightness(10%);
+                    filter: brightness(40%);
                     border-radius: 15px;
 
                     @media (max-width: 1024px) {

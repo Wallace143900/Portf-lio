@@ -121,6 +121,7 @@ section {
                 justify-content: center;
                 text-align: center;
                 width: 70%;
+                margin: 0 auto;
 
                 .divButtons {
                     flex-direction: column;
@@ -154,10 +155,6 @@ section {
 
         @media (max-width: 375px) {
             width: 80%;
-        }
-
-        @media (max-width: 320px) {
-            width: 100%;
         }
 
         .line {
@@ -271,7 +268,7 @@ section {
                 &:nth-child(1) { top: 5%; left: 0%; animation-delay: -0.5s; }
                 &:nth-child(1) { top: 4%; left: 0%; animation-delay: -1s; }
                 &:nth-child(2) { top: 15%; left: 30%; animation-delay: -1.5s; }
-                &:nth-child(2) { top: 20%; left: 40%; animation-delay: -2s; }
+                &:nth-child(2) { top: 12%; left: 80%; animation-delay: -2s; }
                 &:nth-child(3) { top: 30%; left: 80%; animation-delay: -3s; }
                 &:nth-child(4) { top: 40%; left: 80%; animation-delay: -4s; }
                 &:nth-child(5) { top: 50%; left: 0%; animation-delay: -5s; }
