@@ -57,6 +57,7 @@
         .closeButton {
             position: absolute;
             top: 10px;
+            z-index: 1;
             right: 10px;
             color: var(--White-write);
             background-color: transparent;
@@ -89,7 +90,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                top: 30%;
+                top: 31%;
             }
 
             @media (max-width: 375px) {
@@ -100,7 +101,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                top: 30%;
+                top: 32%;
             }
 
             @media (max-width: 320px) {
@@ -211,7 +212,7 @@
                     @media (max-width: 320px) {
                         width: 270px;
                         height: 220px;
-                        margin-left: -12px;
+                        margin-left: -20px;
                         margin-top: 120px;
                     }
                 }
