@@ -3,7 +3,6 @@ import { useDarkMode } from "../../context/DarkModeContext";
 import styles from "./styles.module.scss";
 
 export const Home = () => {
-
     const { isDarkMode } = useDarkMode();
 
     return (
@@ -20,6 +19,12 @@ export const Home = () => {
                 </div>
                 <img className={styles.img} src={fotoCurriculo} alt="" />
             </div>
+            {/* Linhas animadas */}
+            <div className={styles.animatedLines}>
+                {Array.from({ length: 20 }).map((_, index) => (
+                    <div key={index} className={styles.line}></div>
+                ))}
+            </div>
         </section>
-    )
-}
+    );
+};
