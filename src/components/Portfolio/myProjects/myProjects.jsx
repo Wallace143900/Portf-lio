@@ -7,6 +7,7 @@ import PrevisaoTempo from "../../../../public/previsaoTempo.svg";
 import ControlFinance from "../../../../public/controlFinance.svg";
 import Hamburgueria from "../../../../public/burguer.svg";
 import KenzieHub from "../../../../public/kenzieHub.svg";
+import thebook from "../../../../public/the book.jpg";
 import Entrega1 from "../../../../public/backEnd.svg";
 import videoMyTasks from "../../../../public/myTasks.mp4";
 import videoSiteGenerico from "../../../../public/siteGenerico.mp4";
@@ -14,6 +15,7 @@ import videoPortfolio from "../../../../public/portfolio.mp4";
 import calculadora from "../../../../public/calculadora.mp4";
 import previsaoTempo from "../../../../public/previsaoTempo.mp4";
 import videoControlFinance from "../../../../public/controlFinance.mp4";
+import videoTheBook from "../../../../public/the book.mp4";
 import videoHamburgueria from "../../../../public/burguer.mp4";
 import videoKenzieHub from "../../../../public/kenzieHub.mp4";
 import videoApi1 from "../../../../public/api1.mp4";
@@ -69,6 +71,16 @@ export const MyProjects = forwardRef((props, ref) => {
         linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_euquedesenvolvi-activity-7173015631720505346-fK3E?utm_source=share&utm_medium=member_desktop",
         description: "O projeto do Portfólio Pessoal de Wallace Menezes é um exemplo de aplicação front-end desenvolvida com React e Sass, focada em apresentar habilidades técnicas e projetos realizados. Utilizando uma estrutura modular, o portfólio inclui seções como apresentação pessoal, tecnologias dominadas, e uma galeria de projetos destacados. Cada seção é estilizada com CSS modularizado através de Sass, garantindo uma apresentação visual coesa e responsiva em diferentes dispositivos."
     },
+    {
+      title: "The Book",
+      img: thebook,
+      video: videoTheBook,
+      technologies: ["HTML5", "Sass", "JavaScript", "React"],
+      linkProjeto: "https://the-books-one.vercel.app/",
+      linkGithub: "https://github.com/Wallace143900/The-Books",
+      linkLinkedin: "https://www.linkedin.com/posts/wallace-menezes-505019125_frontend-reactjs-sass-activity-7228052952253399040-FhyP?utm_source=share&utm_medium=member_desktop",
+      description: "Desenvolvi uma aplicação de livraria online utilizando React.js e Sass, com foco em criar uma interface intuitiva e responsiva. O projeto inclui funcionalidades como filtros avançados por categoria e preço, uma pesquisa dinâmica que atualiza a lista de livros em tempo real, e exibição dos preços formatados para a moeda brasileira. A estrutura modular dos componentes garante que o código seja organizado e facilmente escalável."
+  },
     {
       title: "Calculadora",
       img: Calculadora,
