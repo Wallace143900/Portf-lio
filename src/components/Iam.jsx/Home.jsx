@@ -13,7 +13,7 @@ export const Home = () => {
                     <h1 className="title1" id={styles.title1}>Wallace Menezes</h1>
                     <h4 className="title4">Desenvolvedor Front End</h4>
                     <div className={styles.divButtons}>
-                        <a href="https://drive.google.com/uc?export=download&id=1Dj8Gc_1CCEwDNTEIrDwlPFHpcZw4Abks" className="buttonCV" id={styles.buttonCV}>Download CV</a>
+                        <a href="https://drive.google.com/file/d/1hu13dsE2oypg28ZeaQUonpWR5MnN38mA/view?usp=sharing" className="buttonCV" id={styles.buttonCV}>Download CV</a>
                         <a href="https://wa.me/5521965629403" className="buttonContato" id={styles.buttonContato} target="_blank">Me Chame</a>
                     </div>
                 </div>

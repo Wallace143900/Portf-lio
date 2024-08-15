@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { useDarkMode } from "../context/DarkModeContext";
 
@@ -9,7 +8,7 @@ export const ModalProjects = ({ projectDetails, onClose }) => {
 
   if (!projectDetails) return null;
 
-  const isBackend = projectDetails.technologies.includes("Node.js");
+  const isBackend = projectDetails.technologies.includes("Node.js", "CSharp", "Dotnet", "SQL");
 
   return (
     <div open className={styles.modal}>
